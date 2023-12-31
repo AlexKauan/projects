@@ -1,0 +1,73 @@
+.intro{
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.job{
+  position: relative;
+}
+
+.title-job{
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+}
+
+.job p{
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+.title-job::before{
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("/portfolio/img/detalhe.svg") no-repeat center;
+  position: absolute;
+  left: -40px;
+  top: -20px;
+  z-index: -1;
+}
+
+@media (max-width: 1000px){
+  .title-job{
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px){
+  .intro{
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .title-job{
+    font-size: 2rem;
+  }
+  .title-job::before{
+    width: 10px;
+    height: 100px;
+    left: -20px;
+    top: -10px;
+  }
+}
+
+@media (max-width: 500px){
+  .intro{
+    grid-template-columns: 1fr;
+  }
+  .title-job::before{
+    width: 100px;
+    height: 80px;
+    left: -20px;
+    top: -10px;
+  }
+  .title-job{
+    font-size: 3rem;
+  }
+}

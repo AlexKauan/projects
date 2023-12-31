@@ -1,0 +1,112 @@
+.footer {
+  background: #000;
+}
+
+.footer-container {
+  max-width: 1200px;
+  padding: 120px 20px 60px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.footer-text {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #ccc;
+}
+
+.footer-contact li {
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.insta {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+.footer-copy{
+  font-size: 1.125rem;
+  color: #8f8f8f;
+}
+
+.insta::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../img/instagram.svg") no-repeat center center;
+  position: absolute;
+  left: -60px;
+  top: -5px;
+}
+.email {
+  position: relative;
+}
+
+.email::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../img/envelope.svg") no-repeat center center;
+  position: absolute;
+  left: -60px;
+  top: -5px;
+}
+
+.phone {
+  position: relative;
+}
+
+.phone::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../img/telephone.svg") no-repeat center center;
+  position: absolute;
+  left: -60px;
+  top: -5px;
+}
+
+@media (max-width: 800px){
+  .footer-container {
+    padding: 120px 20px 60px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    justify-items: center;
+  }
+  .footer-text{
+    font-size: 1.2rem;
+    line-height: 1.33;
+  }
+  .footer-contact li {
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .email::before {
+    left: -65px;
+    top: -15px;
+  }
+  .phone::before {
+    left: -20px;
+    top: -15px;
+  }
+  .insta::before {
+    left: -60px;
+    top: -10px;
+  }
+}
